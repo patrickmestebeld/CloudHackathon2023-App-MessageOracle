@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FF9D0A0A-3547-4561-923F-5B8E65DFCABD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{900052F6-E80A-4E61-8B33-DDA419FF95E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageOracle.Api", "src\Apps\MessageOracle.Api\MessageOracle.Api.csproj", "{061E8714-A5A0-4CB6-9378-ECEC5C4EB54F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{061E8714-A5A0-4CB6-9378-ECEC5C4EB54F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{061E8714-A5A0-4CB6-9378-ECEC5C4EB54F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{061E8714-A5A0-4CB6-9378-ECEC5C4EB54F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{061E8714-A5A0-4CB6-9378-ECEC5C4EB54F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{900052F6-E80A-4E61-8B33-DDA419FF95E5} = {FF9D0A0A-3547-4561-923F-5B8E65DFCABD}
+		{061E8714-A5A0-4CB6-9378-ECEC5C4EB54F} = {900052F6-E80A-4E61-8B33-DDA419FF95E5}
+	EndGlobalSection
+EndGlobal
