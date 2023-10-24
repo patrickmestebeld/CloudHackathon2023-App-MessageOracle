@@ -7,16 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Answering\Impl\AnswerService.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Answering\Impl\AnswerService.cs" />
+    <ProjectReference Include="..\..\Libs\MessageOracle.Core\MessageOracle.Core.csproj" />
+    <ProjectReference Include="..\..\Libs\MessageOracle.Infra\MessageOracle.Infra.csproj" />
   </ItemGroup>
 
 </Project>
