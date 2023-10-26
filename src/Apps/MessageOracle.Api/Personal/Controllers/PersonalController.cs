@@ -1,4 +1,4 @@
-using MessageOracle.Core.Personal.Entities;
+using MessageOracle.Api.Personal.Models;
 using MessageOracle.Core.Personal.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,5 +18,5 @@ public class PersonalController : ControllerBase
     }
 
     [HttpGet]
-    public ActionResult<PersonalData> Get(Guid key) => Ok(_personalDataGenerator.Generate(key));
+    public ActionResult<PersonalDataDto> Get(Guid key) => Ok(PersonalDataDto.FromPersonalData(_personalDataGenerator.Generate(key)));
 }
