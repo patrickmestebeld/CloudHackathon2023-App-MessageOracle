@@ -7,6 +7,8 @@ namespace MessageOracle.Infra.Personal.Fakers
     {
         public Bsn Generate(Guid key)
         {
+            if (GeneratorConstants.IsRealistic == false) return new Bsn("123443210");
+
             int rest; string bsn;
             Random random = new Random(key.GetHashCode());
             do

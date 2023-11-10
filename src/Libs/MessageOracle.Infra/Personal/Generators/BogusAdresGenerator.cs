@@ -8,7 +8,7 @@ namespace MessageOracle.Infra.Personal.Fakers
     internal class BogusAdresGenerator : IObjectGenerator<Adres>
     {
         public Adres Generate(Guid key)
-            => new Faker<AdresBuilder>(GeneratorConstants.FAKE_LOCALE)
+            => new Faker<AdresBuilder>(GeneratorConstants.FakeLocal)
                 .StrictMode(true)
                 .UseSeed(key.GetHashCode())
                 .RuleFor(o => o.Straatnaam, f => f.Address.StreetName())

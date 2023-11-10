@@ -8,7 +8,7 @@ namespace MessageOracle.Infra.Personal.Fakers
     {
         public Naam Generate(Guid key)
         {
-            return new Faker<NaamBuilder>(GeneratorConstants.FAKE_LOCALE)
+            return new Faker<NaamBuilder>(GeneratorConstants.FakeLocal)
                         .StrictMode(true)
                         .UseSeed(key.GetHashCode())
                         .RuleFor(o => o.Voorletters, _ => ".")

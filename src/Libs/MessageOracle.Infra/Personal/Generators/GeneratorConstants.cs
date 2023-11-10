@@ -4,7 +4,8 @@ namespace MessageOracle.Infra.Personal.Fakers
 {
     public static class GeneratorConstants
     {
-        public const string FAKE_LOCALE = "nl";
+        public static bool IsRealistic = false;
+        public static string FakeLocal => IsRealistic ? "nl" : "ne";
         private static void SetSeed() => Randomizer.Seed = new Random(123456789);
         private static void SetClock()
         {
